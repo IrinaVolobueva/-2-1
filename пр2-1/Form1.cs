@@ -29,15 +29,13 @@ namespace пр2_1
             if (input.Length >= 2)
             {
                 students.Add(new Student(input[0], input[1]));
+                listBox2.Items.Add($"{input[0]} {input[1]}");
                 textBox1.Clear();
             }
             else
             {
                 MessageBox.Show("Введите фамилию и имя через пробел.");
             }
-
-            
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
